@@ -1,0 +1,16 @@
+# Node
+node_modules/
+**/node_modules/
+
+# Builds
+.next/
+**/.next/
+dist/
+**/dist/
+.turbo/
+
+# OS/Editor
+.DS_Store
+*.log
+.env.local
+.env.*.local
