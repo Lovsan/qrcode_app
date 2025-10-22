@@ -1,0 +1,23 @@
+{
+  "name": "@prismqr/ui-web",
+  "version": "0.1.0",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": ["./styles.css"],
+  "scripts": {
+    "build": "tsup src/index.tsx --dts --format esm,cjs --external react,react-dom",
+    "dev": "tsup src/index.tsx --watch",
+    "lint": "eslint .",
+    "typecheck": "tsc -p tsconfig.json --noEmit"
+  },
+  "peerDependencies": {
+    "react": ">=18",
+    "react-dom": ">=18"
+  },
+  "devDependencies": {
+    "tsup": "^8.3.5"
+  },
+  "dependencies": {
+    "qrcode": "^1.5.4"
+  }
+}
